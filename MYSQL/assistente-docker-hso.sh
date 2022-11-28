@@ -21,7 +21,7 @@ if [ $? -eq 0 ]
 		sudo docker pull mysql:8.0.3
 
 		sudo docker build -t image_mysql_hso .
-    	sudo docker run image_mysql_hso
+    	sudo docker run image_mysql_hso -p 3306:3306
 	else
 		echo "$(tput setaf 10)[Bot assistant]:$(tput setaf 7)  Você realmente deseja instalar o Docker? (Y/n)"
 		sleep 2		
@@ -38,7 +38,7 @@ if [ $? -eq 0 ]
 			sudo docker pull mysql:8.0.3
 
             sudo docker build -t image_mysql_hso .
-            sudo docker run image_mysql_hso
+            sudo docker run image_mysql_hso -p 3306:3306
 
 			echo "Instalação do Docker e criação das tabelas de banco de dados concluídas!"
 			sleep 1
