@@ -55,5 +55,3 @@ sleep 1
 
 sudo docker build -t image_java_hso .
 sudo docker run image_java_hso
-
-
