@@ -52,5 +52,6 @@ git clone https://github.com/2ADSC-Grupo9-HSO/jar-para-vm.git
 echo "Aplicação instalada!"
 sleep 1
 
+cd jar-para-vm/
 sudo docker build -t image_java_hso .
-sudo docker run image_java_hso
+sudo docker run -i -t image_java_hso
